@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container" id="resume">
+        <header class="header">
+            <h1 contenteditable="true">John Doe</h1>
+            <p class="contact-info" contenteditable="true">
+                Email: john.doe@example.com | Phone: +1234567890 | Address: 123 Main St, Anytown, USA
+            </p>
+        </header>
+
+        <section class="section">
+            <h2 contenteditable="true">Objective</h2>
+            <p contenteditable="true">Detail-oriented and results-driven professional with over 5 years of experience in project management and team leadership. Seeking a challenging position to leverage expertise in managing high-profile projects.</p>
+        </section>
+
+        <section class="section">
+            <h2 contenteditable="true">Experience</h2>
+            <div class="job">
+                <h3 contenteditable="true">Senior Project Manager</h3>
+                <h4 contenteditable="true">XYZ Corporation, Anytown, USA</h4>
+                <p contenteditable="true">Jan 2020 - Present</p>
+                <ul>
+                    <li contenteditable="true">Led a team of 10 to successfully complete projects on time and within budget.</li>
+                    <li contenteditable="true">Implemented new project management software, increasing efficiency by 20%.</li>
+                </ul>
+            </div>
+            <div class="job">
+                <h3 contenteditable="true">Project Coordinator</h3>
+                <h4 contenteditable="true">ABC Ltd., Anytown, USA</h4>
+                <p contenteditable="true">June 2015 - Dec 2019</p>
+                <ul>
+                    <li contenteditable="true">Coordinated cross-functional teams to deliver projects successfully.</li>
+                    <li contenteditable="true">Managed project budgets and schedules, reducing costs by 15%.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 contenteditable="true">Education</h2>
+            <div class="education">
+                <h3 contenteditable="true">Master of Business Administration (MBA)</h3>
+                <h4 contenteditable="true">University of Anytown, USA</h4>
+                <p contenteditable="true">Graduated: 2015</p>
+            </div>
+            <div class="education">
+                <h3 contenteditable="true">Bachelor of Science in Business Management</h3>
+                <h4 contenteditable="true">University of Anytown, USA</h4>
+                <p contenteditable="true">Graduated: 2013</p>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 contenteditable="true">Skills</h2>
+            <ul>
+                <li contenteditable="true">Project Management</li>
+                <li contenteditable="true">Leadership</li>
+                <li contenteditable="true">Budget Management</li>
+                <li contenteditable="true">Communication</li>
+            </ul>
+        </section>
+
+        <section class="section">
+            <h2 contenteditable="true">Certifications</h2>
+            <ul>
+                <li contenteditable="true">Certified Project Management Professional (PMP)</li>
+                <li contenteditable="true">Certified Scrum Master (CSM)</li>
+            </ul>
+        </section>
+
+        <button id="download">Download PDF</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
